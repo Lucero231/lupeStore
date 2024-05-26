@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+</style>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LupeStore</title>
+    <link rel="icon" type="image/png" href="../lupeStore/img/Lupe.jpg">
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+</head>
+
+<body>
+
+    <body class="home">
+
+        <div class="logo">
+            <img src="../img/Lupe.jpg" alt="">
+            <h1>Bienvenido a LupeStore</h1>
+        </div>
+
+        <div class="menu">
+            <ul class="navigation">
+                <li class="nav-item">
+                    <a class="nav-link active" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nuestraspromos.html">Promociones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+
+            </ul>
+        </div>
+
+        <main class="main_form" onload="Captcha();">
+            <h2>Hacenos tu pedido</h2>
+            <form action="" onsubmit="return validarFormulario()">
+                <div class="grupo">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input id="nombre" type="text" name="nombre" required />
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido:</label>
+                        <input id="apellido" type="text" name="apellido" required />
+                    </div>
+                    <div>
+                        <label for="fechapedido">Fecha de pedido:</label>
+                        <input id="dia" type="date" required />
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input id="email" type="text" name="email" required />
+                    </div>
+                    <div>
+                        <label for="direccion">Direccion:</label>
+                        <input id="direccion" type="text" name="direccion" required />
+                    </div>
+                    <div>
+                        <textarea name="pedido" rows="10" cols="40" placeholder="hace tu pedido"></textarea>
+                    </div>
+                    <div class="capt">
+                        <p3 type="text" id="Captcha"></p3>
+                        <p><input type="button" id="refresh" onclick="Captcha();" /></p>
+                        <input type="text" id="txtInput" value="" required />
+                        <input id="Button1" type="button" value="Check" onclick="alert(ValidarCaptcha());" />
+                    </div>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </main>
+        <footer class="footer">
+            <p id="foot">©2024. All Rights Reserved</p>
+            <div class="contenedor-icono">
+                <a href="http://www.facebook.com/lupe.store.ok/" class="nav-link"><img src="../img/fc.webp"
+                        alt="Icono facebook"></a>
+                <a href="https://www.instagram.com/lupe.store.ok/" class="nav-link"><img src="../img/ig.webp"
+                        alt="Icono Instagram"></a>
+                <a href="https://www.whatsapp.com/" class="nav-link"><img src="../img/wp.webp" alt="Icono WhatsApp"></a>
+            </div>
+        </footer>
+        <script type="text/javascript" src="../js/validar.js"></script>
+    </body>
+
+</html>

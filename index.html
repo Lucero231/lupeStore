@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LupeStore</title>
+    <link rel="icon" type="image/png" href="../lupeStore/img/Lupe.jpg">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+
+    <div class="logo">
+        <img src="img/Lupe.jpg" alt="Logo de LupeStore">
+        <h1>Bienvenido a LupeStore</h1>
+        <img src="img/Lupe.jpg" alt="Logo de LupeStore">
+    </div>
+
+    <div class="menu">
+        <ul class="navigation">
+            <li class="nav-item">
+                <a class="nav-link active" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./html/nuestraspromos.html">Promociones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./html/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./html/contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </div>
+
+    <h1 class="animate__animated animate__heartBeat">10% off con Cuenta DNI</h1>
+    <h2>Las mejores prendas de Tandil</h2><br>
+
+    <div class="products-container">
+        <div class="indumentaria">
+            <img src="img/sueter blanco.jpg" alt="Suéter Blanco Calado Griselda">
+            <h3>Suéter Calado Griselda Blanco</h3>
+            <p>Este suéter además de ser abrigado es muy canchero y cómodo.</p>
+            <span>$11500</span>
+        </div>
+
+        <div class="indumentaria">
+            <img src="img/sueter negro.jpg" alt="Suéter Negro Calado Griselda">
+            <h3>Suéter Calado Griselda Negro</h3>
+            <p>Este suéter además de ser abrigado es muy canchero y cómodo.</p>
+            <span>$11500</span>
+        </div>
+    </div>
+    </section>
+    </div>
+
+    <footer class="footer">
+        <p id="foot">©2024. All Rights Reserved</p>
+        <div class="contenedor-icono">
+            <a href="http://www.facebook.com/lupe.store.ok/" class="nav-link">
+                <img src="img/fc.webp" alt="Icono de Facebook">
+            </a>
+            <a href="http://www.instagram.com/lupe.store.ok/" class="nav-link">
+                <img src="img/ig.webp" alt="Icono de Instagram">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu').addEventListener('click', function () {
+            this.classList.toggle('show');
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    </script>
+
+</body>
+
+</html>
