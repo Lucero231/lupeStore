@@ -64,12 +64,14 @@
                         <label for="direccion">Direccion:</label>
                         <input id="direccion" type="text" name="direccion" required />
                     </div>
+                    <label for="remember"><input type="checkbox" id="remember" name="remember">Acepto términos y
+                        condiciones</label>
                     <div>
                         <textarea name="pedido" rows="10" cols="40" placeholder="hace tu pedido"></textarea>
                     </div>
                     <div class="capt">
                         <p3 type="text" id="Captcha"></p3>
-                        <p><input type="button" id="refresh" onclick="Captcha();" /></p>
+                        <p><input type="button" value="Reset" id="refresh" onclick="Captcha();" />Captcha</p>
                         <input type="text" id="txtInput" value="" required />
                         <input id="Button1" type="button" value="Check" onclick="alert(ValidarCaptcha());" />
                     </div>

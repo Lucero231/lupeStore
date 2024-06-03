@@ -1,3 +1,4 @@
+/* Estilos base */
 * {
     margin: 0;
     padding: 0;
@@ -10,27 +11,19 @@ body {
 }
 
 #menu {
-    display: block;
+    display: inline;
     font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
-    padding: .5rem .75rem;
-    background-color: #000000;
+    padding: 0.5rem 0.75rem;
+    background-color: #ffffff;
     color: #ffffff;
-}
-
-#menu::before {
-    content: "≡";
-}
-
-nav {
-    background-color: tomato;
 }
 
 .navigation {
     list-style: none;
     margin: 0 auto;
-    max-width: 760px;
+    max-width: 100%;
 }
 
 .navigation li {
@@ -42,24 +35,16 @@ nav {
     padding: 0.75rem;
     text-align: left;
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     font-weight: 700;
     transition: 0.5s;
     font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
 .navigation a:hover,
-navigation a:active {
-    color: tomato;
+.navigation a:active {
+    color: rgb(255, 255, 255);
     background-color: black;
-}
-
-.show li {
-    display: block;
-}
-
-#menu.show::before {
-    content: "X";
 }
 
 @media only screen and (min-width: 40em) {
@@ -111,14 +96,13 @@ footer {
 .logo {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 1px;
+    justify-content: center;
+    padding: 10px;
     background-color: rgb(27, 182, 153);
+    max-width: 100%;
 }
 
 .logo img {
-    margin-right: 150px;
-    margin-left: 150px;
     width: 2em;
     height: 2em;
 }
@@ -145,6 +129,7 @@ h2 {
 
     .logo {
         margin-bottom: 10px;
+        justify-content: center;
     }
 
     h1 {
@@ -156,7 +141,6 @@ h2 {
     }
 }
 
-
 @media (min-width: 768px) and (max-width: 1199px) {
     .footer {
         flex-direction: row;
@@ -165,7 +149,7 @@ h2 {
     }
 
     .logo {
-        width: 45%;
+        justify-content: space-around;
     }
 
     h1 {
@@ -178,7 +162,6 @@ h2 {
     }
 }
 
-
 @media (min-width: 1200px) {
     .footer {
         flex-direction: row;
@@ -187,7 +170,7 @@ h2 {
     }
 
     .logo {
-        width: auto;
+        justify-content: space-between;
     }
 
     h1 {
@@ -230,4 +213,33 @@ h2 {
 
 .indumentaria span {
     font-weight: bold;
+}
+
+.main_form h2 {
+    color: blue;
+}
+
+.main_form .grupo {
+    display: grid;
+    margin-top: 1rem;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.main_form .capt {
+    display: grid;
+    justify-content: center;
+}
+
+.nosotros {
+    max-width: 60%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.293);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
